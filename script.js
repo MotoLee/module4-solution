@@ -35,7 +35,7 @@ WARNING!!! WARNING!!!
 // (Note, Step 2 will be done in the SpeakHello.js file.)
 
 (function(window){
-  var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];  
+  var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
   window.names = names;
 })(window);
 
@@ -45,6 +45,7 @@ WARNING!!! WARNING!!!
 // 'speak' method.
 // See Lecture 50, part 1
 for (var i=0; i<names.length; i++) {
+
   // STEP 11:
   // Retrieve the first letter of the current name in the loop.
   // Use the string object's 'charAt' function. Since we are looking for
@@ -60,10 +61,8 @@ for (var i=0; i<names.length; i++) {
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
   if (firstLetter == 'j') {
-    // byeSpeaker.xxxx
     byeSpeaker.speak(names[i]);
   } else {
-    // helloSpeaker.xxxx
     helloSpeaker.speak(names[i]);
   }
 }
